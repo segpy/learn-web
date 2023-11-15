@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="La descripcion de la pagina para posicion SEO"
+    />
+    <meta name="robots" content="index,follow" />
+    <!-- displays site properly based on user's device -->
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Calendario</title>
+
+    <!-- 
+    -custom css link
+    -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- 
+    -google font link
+    -->
+  </head>
+
+  <body>
+    <!-- 
+      -Content
+    -->
+    <main>
+      <form action="">
+        <label>
+          <span>Cual es tu nombre</span>
+          <input type="text" id="name" name="name" autocomplete="name" />
+        </label>
+        <label>
+          <span>Cual es tu correo</span>
+          <input type="email" id="email" name="email" autocomplete="email" />
+        </label>
+        <label>
+          <span>En que pais vives</span>
+          <input
+            type="text"
+            id="country"
+            name="country"
+            autocomplete="country-name"
+          />
+        </label>
+        <label>
+          <span>Cual es tu codigo postal</span>
+          <input type="number" id="cp" name="cp" autocomplete="postal-code" />
+        </label>
+        <input list="curso" />
+        <datalist id="curso">
+          <option value="Java">Java</option>
+          <option value="C++"></option>
+          <option value="Angular"></option>
+          <option value="React"></option>
+        </datalist>
+        <select name="cursos" id="cursos">
+          <option value="--">--</option>
+          <option value="Javascript">Javascript</option>
+          <option value="Python">Python</option>
+        </select>
+        <input type="submit" />
+      </form>
+    </main>
+    <!-- 
+      -internal script
+    -->
+  </body>
+</html>

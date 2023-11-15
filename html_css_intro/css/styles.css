@@ -1,0 +1,125 @@
+/* 
+ - VARIABLES
+*/
+
+:root {
+    /* 
+     - colors
+    */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+
+    /* 
+     - Typography
+    */
+    --fs-16: 16px;
+}
+
+/* 
+ - RESET 
+*/
+    /*     
+    !MANDATORY
+    */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+html, body {
+    /* height: 100%;  apply in body desktop size*/
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px; /* font-size: 1rem*/
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%; 
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+    /* 
+    *PROJECT
+    */
+
+a{
+    text-decoration: none;
+}
+
+body {
+    /* height: 100%; active for desktop */
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 25px;
+    background-color: var(--Very-light-gray);
+}
+
+
+    /* 
+    ?MAIN STYLE
+    */
+ol {
+    padding-left: 15px;
+}
+
+
+    /* 
+    *Interactive
+     */
+    /* * */
+
+
+
+    /* Footer */
+    
+footer{
+    align-self: flex-end;
+}
+
+    /* 
+    ?RESPONSIVE
+    */
+@media screen and (min-width:768px) {
+    
+}

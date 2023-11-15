@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="La descripcion de la pagina para posicion SEO"
+    />
+    <meta name="robots" content="index,follow" />
+    <!-- displays site properly based on user's device -->
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Title</title>
+
+    <!-- 
+    -normalize and custom css link
+     -->
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- 
+    -google font link
+    -->
+  </head>
+
+  <body>
+    <!-- 
+      -Content
+    -->
+    <main>
+      <!-- PARA UN MISMO BRACKET -->
+      <!-- h2 + p => Revisa solo una etiqueta hermana ENCIMA                [ESPECIFICO]-->
+      <h2>Soy un h2</h2>
+      <p>Soy un p</p>
+      <!-- h2 ~ p => Revisa todas las etiquetas hermanas ENCIMA (ej. main)  [GENERAL]-->
+      <p>Soy un p</p>
+      <!-- PARA BRACKETS HIJOS -->
+      <!-- div > p => Revisa que la etiqueta p sea hija DIRECTA)            [ESPECIFICO]-->
+      <div>
+        <p></p>
+      </div>
+      <!-- div p => Revisa que la etiqueta p sea hija GENERAL               [GENERAL]-->
+      <div>
+        <div>
+          <p></p>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <!-- 
+      -internal script
+    -->
+  </body>
+</html>
