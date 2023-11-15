@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+.container {
+    border: 1px solid red;
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 100px);
+    grid-template-areas:
+        "uno dos dos"
+        "tres tres cuatro"
+        "cinco seis siete";
+    place-content: center;
+    gap: 5px;
+}
+
+.item {
+    border: 1px solid aqua;
+    background-color: peru;
+}
+
+.item1 {
+    grid-area: uno;
+}
+
+.item2 {
+    grid-area: dos;
+}
+
+.item3 {
+    grid-area: tres;
+}
+
+.item4 {
+    grid-area: cuatro;
+}
+
+.item5 {
+    grid-area: cinco;
+}
+
+.item6 {
+    grid-area: seis;
+}
+
+.item7 {
+    grid-area: siete;
+}

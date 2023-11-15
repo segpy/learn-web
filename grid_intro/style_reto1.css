@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+.container {
+    border: 1px solid red;
+    display: grid;
+    height: 400px;
+    place-content: center;
+    /* place-items: center; */
+    /** grid-template es necesario */
+    /* grid-template-columns: repeat(2, 150px);
+    grid-auto-rows: 100px; */
+    grid-template-rows: repeat(3, 100px);
+    grid-auto-columns: 150px;
+    /** grid-auto-flow == grid-auto-, indica donde crear nuevos items */
+    grid-auto-flow: column;
+    /* grid-auto-flow: row; */
+    gap: 20px;
+}
+
+.item {
+    border: 1px solid aqua;
+    background-color: peru;
+    font-size: 2rem;
+}
+
+.item1 {
+    /* align-self: flex-start; */
+}
